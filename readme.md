@@ -16,3 +16,5 @@
   - Open chrome://settings/certificates in the browser.
   - Click on Authorities tab.
   - Click on Import button and select the certificate from the step 4.
+
+In mitmproxy press E to see events that will show the logger.info
