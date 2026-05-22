@@ -6,11 +6,8 @@
   - Windows: download binary from mitmproxy.org
 
 - Run `mitmproxy` in the terminal (`bash ./start.sh`) and it'll start a proxy on `localhost:8080` on your machine.
-- Start Chrome instance with `mitmproxy` proxy attached to it (or you can use Oxylabs proxy extension):
-  - Linux: `google-chrome --proxy-server="localhost:8080"`
-  - MacOs: `open -a "Google Chrome" --args --proxy-server="localhost:8080"`
-  - Windows: `chrome.exe --proxy-server="localhost:8080"`
-- Open http://mitm.it in the browser and download the certificate for your system (other platforms mitmproxy-ca-cert.pem).
+- Install Oxylabs proxy extension for chrome and set up the proxy (http 127.0.0.1 port 8080, no user name or password)
+- Open http://mitm.it in the browser while using the proxy with oxylabs and download the certificate for your system (other platforms mitmproxy-ca-cert.pem).
 - Install the certificate to your Chrome or Chromium browser:
-  - Open chrome://settings/certificates in the browser.
-  - way to import certificate may change so please use google to see
+  - Open chrome://certificate-manager/ in the browser.
+  - Custom -> Installed by you -> Trusted Certificates -> Import
